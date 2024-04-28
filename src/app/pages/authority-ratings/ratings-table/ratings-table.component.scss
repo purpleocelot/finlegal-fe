@@ -1,0 +1,53 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+table {
+  background-color: rgb(37, 37, 37);
+  border: 2px solid rgb(81, 81, 81);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 20px;
+  font-size: large;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 15px;
+}
+
+th {
+  padding-top: 0px;
+}
+
+tbody tr td {
+  border-bottom: 2px solid rgb(81, 81, 81);
+}
+
+tbody tr:first-child td {
+  border-top: 2px solid silver;
+}
+
+tbody tr:last-child td {
+  border-bottom: 2px solid silver;
+}
+
+tfoot tr td {
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+
+.rating, .tally, .percent {
+  width: 33%;
+  white-space: nowrap;
+}
+
+.rating {
+  text-align: left;
+}
+
+.tally, .percent, .total {
+  text-align: right;
+}

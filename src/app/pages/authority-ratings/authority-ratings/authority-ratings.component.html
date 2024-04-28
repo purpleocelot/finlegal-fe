@@ -1,0 +1,10 @@
+<div>
+  <p>
+    This summarizer will take take all the data from a specific authority, and show you how the food
+    hygiene ratings are distributed.
+  </p>
+</div>
+
+<app-authority-selector (selectedEvent)="authoritySelected($event)"></app-authority-selector>
+
+<app-ratings-table [authorityId]="authorityId"></app-ratings-table>

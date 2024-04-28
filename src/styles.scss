@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(22, 22, 22);
+  color: rgb(232, 232, 232);
+}
+
+h1, h2, h3, h4 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  color: white;
+}
+
+h1 {
+  font-size: 36pt;
+}
+
+a {
+  color: violet;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(242, 175, 242);
+  text-decoration: underline;
+}

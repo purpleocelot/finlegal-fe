@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { AuthorityService } from './core/services/authority.service';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,5 +11,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'finlegal-test';
+
+  constructor(private authorityService: AuthorityService) {
+    this.authorityService.loadData();
+  }
 }

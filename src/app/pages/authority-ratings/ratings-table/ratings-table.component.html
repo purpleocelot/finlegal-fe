@@ -1,0 +1,28 @@
+<section id="ratings" aria-live="polite">
+  <table *ngIf="ratings.length">
+    <thead>
+      <tr>
+        <th class="rating">Rating</th>
+        <th class="tally">Establishments</th>
+        <th class="percent">Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of ratings; index as idx;" [attr.data-row]="idx">
+        <td class="rating">{{item.name}}</td>
+        <td class="tally">{{item.tally | number: '1.0-0'}}</td>
+        <td class="percent">{{item.value | number: '1.2-2'}}%</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td class="total" aria-label="Total number of establishments in this local authority">
+          <span aria-hidden="true">Total: </span>
+          {{total | number: '1.0-0'}}
+        </td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</section>

@@ -1,0 +1,35 @@
+form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+select {
+  border: 4px solid violet;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 10px;
+  font-size: large;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+option {
+  font-size: large;
+}
+
